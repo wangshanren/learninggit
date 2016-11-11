@@ -4,3 +4,4 @@ wangshanren okokokok
 Git has a mutable index called stage.
 git is useful freeadad adsk
 asdasda
+Creating a new branch is quick AND simple.
