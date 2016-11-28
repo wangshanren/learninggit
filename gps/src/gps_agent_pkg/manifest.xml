@@ -1,0 +1,46 @@
+<package>
+    <description brief="gps_agent_pkg">
+        gps_agent_pkg
+    </description>
+    <author></author>
+    <license>BSD</license>
+    <review status="unreviewed" notes=""/>
+    <depend package="std_msgs"/>
+    <depend package="sensor_msgs"/>
+    <depend package="controller_interface"/>
+    <depend package="controller_manager"/>
+    <depend package="pluginlib"/>
+    <depend package="roscpp"/>
+    <depend package="roslib"/>
+    <depend package="rospy"/>
+    <depend package="controller_manager_msgs"/>
+    <depend package="control_toolbox"/>
+    <depend package="realtime_tools"/>
+    <depend package="orocos_kdl"/>
+    <depend package="kdl_parser"/>
+    <depend package="geometry_msgs"/>
+    <depend package="tf"/>
+
+    <build_depend>angles</build_depend>
+    <build_depend>controller_interface</build_depend>
+    <build_depend>control_msgs</build_depend>
+    <build_depend>control_toolbox</build_depend>
+    <build_depend>urdf</build_depend>
+    <build_depend>forward_command_controller</build_depend>
+    <build_depend>dynamic_reconfigure</build_depend>
+
+    <run_depend>angles</run_depend>
+    <run_depend>controller_interface</run_depend>
+    <run_depend>control_msgs</run_depend>
+    <run_depend>control_toolbox</run_depend>
+    <run_depend>urdf</run_depend>
+    <run_depend>forward_command_controller</run_depend>
+    <run_depend>dynamic_reconfigure</run_depend>
+
+    <rosdep name="eigen"/>
+
+    <export>
+        <controller_interface plugin="${prefix}/controller_plugins.xml"/>
+    </export>
+
+</package>

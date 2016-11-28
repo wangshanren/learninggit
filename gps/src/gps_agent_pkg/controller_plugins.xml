@@ -1,0 +1,11 @@
+<library path="lib/libgps_agent_lib">
+
+  <class name="gps_agent_pkg/GPSDragonPlugin"
+         type="gps_control::GPSDragonPlugin"
+         base_class_type="controller_interface::ControllerBase" />
+
+  <class name="gps_agent_pkg/JointGroupPositionController"
+         type="gps_control::JointGroupPositionController"
+         base_class_type="controller_interface::ControllerBase"/>
+
+</library>

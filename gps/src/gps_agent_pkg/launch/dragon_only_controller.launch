@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+  <param name="GPSDragonPlugin/type" value="gps_agent_pkg/GPSDragonPlugin" />
+
+  <rosparam command="load" file="$(find gps_agent_pkg)/launch/dragon_controller.yaml" />
+
+  <!-- controller params -->
+  <param name="GPSDragonPlugin/root_name" value="world" />
+  <param name="GPSDragonPlugin/active_tip_name" value="left_back_feet" />
+  <param name="GPSDragonPlugin/passive_tip_name" value="right_back_feet" />
+
+  <!-- kalman filter matrices -->
+  <param name="GPSDragonPlugin/encoder_filter_params" textfile="$(find gps_agent_pkg)/encoder_filter_params.txt" />
+
+  <!-- Spawn Controller -->
+  <node name="controller_spawner"
+       pkg="controller_manager" type="controller_manager" output="screen"
+       args="spawn GPSDragonPlugin"  />
+
+</launch>

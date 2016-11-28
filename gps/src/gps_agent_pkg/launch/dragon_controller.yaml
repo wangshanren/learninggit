@@ -1,0 +1,8 @@
+active_arm_joint_name_1: "left_back_hip"
+active_arm_joint_name_2: "left_back_knee"
+active_arm_joint_name_3: "left_back_foot"
+
+
+passive_arm_joint_name_1: "right_back_hip"
+passive_arm_joint_name_2: "right_back_knee"
+passive_arm_joint_name_3: "right_back_foot"

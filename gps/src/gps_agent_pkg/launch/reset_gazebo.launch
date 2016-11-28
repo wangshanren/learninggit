@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find dragon_control)/launch/dragon_control.launch" />
+
+
+
+</launch>
